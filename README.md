@@ -6,22 +6,16 @@ R: read
 U: update
 D: delete
 
-For this project I used bootstrap to make a modal
-
+For this project I used bootstrap to make a modal,
 bootstrap is a free oopen source front-end development framerwork
-
-a modal is basically a popup box that is displayed on top of the main contect
-
-so that is everything i used for my html
+and a modal is basically a popup box that is displayed on top of the main contect
 
 then in my css
 i added properties to the body to keep the app in the exact center of the screen
 and added more css properties to my classes and divs and to the modal card as well
 
 in JS the first thing I did was select all the selectors from the HTML that I needed to use
-
 then created a form validation for the input fields to make sure the user cannot submit blank input fields
-
 then I used local storage to collect data for whatever input the user writes steps were:
 
 1. To collect the data from the input fields I used the funciton named acceptData and an array named Data then push them inside the local storage.
@@ -41,7 +35,8 @@ first I had to target the task selected to specifically edit that one
 then i targetted the values which would be [task, date, and description]
 and then i had to call the delete task function created above to remove the selected data from local storage, the HTML element and the data array.
 
-ONCE I WAS DONE COLLECTING AND ACCEPTING DATA from the user: I needed to clear the input fields
+ONCE I WAS DONE COLLECTING AND ACCEPTING DATA from the user:
+I needed to clear the input fields
 I created a functioned called resetForm
 
 the two biggest errors I ran into were:
@@ -55,3 +50,7 @@ to solve error 2: I had to include Or: || and a blank array [] in my function
 
 then the last problem i ran into as well was whenever i would add more than three tasks
 is that my tasks would overlflow the container app and to solve that I had to add: overflow-y: scroll; on my app class and an .app::-webkit-scrollbar
+
+and obviously the biggest challenge for this project for me was not meeeting the requirements
+I understand somewhat of the logic of using a JSON or text file using FS but when it came down to actually
+creating the server and just overall trying to grasp the problem solving I just ended up sticking with local storage.
